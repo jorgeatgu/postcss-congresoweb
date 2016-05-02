@@ -166,14 +166,29 @@
                 <pre><code data-trim data-noescape>
 
 				:root {
---mainColor: red;
+--colorico: navajowhite;
 }
 
-a {
-color: var(--mainColor);
+h2 {
+color: var(--colorico);
 }
                                     </code></pre>
             </section>
+                        <section style="text-align: left;">
+                            <h2>CSSNEXT</h2>
+                            <h6>custom media queries</h6>
+                            <pre><code data-trim data-noescape>
+//Definimos el custom media querie
+@custom-media --ipad (width => 48rem);
+
+//Declaramos el custom media querie
+@media (--ipad) {
+  body {
+  display: none;
+  }
+}
+                                                </code></pre>
+                        </section>
             <section data-markdown>
                 <script type="text/template">
                     ## Markdown support Write content using inline or external Markdown. Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown). ```
