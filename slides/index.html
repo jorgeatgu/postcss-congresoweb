@@ -262,7 +262,6 @@ postcss = require('gulp-postcss');
 autoprefixer = require('gulp-autoprefixer');
 sourcemaps = require('gulp-sourcemaps');
 atImport = require('postcss-import');
-postCSS_InlineComment = require('postcss-inline-comment');
 cssnext = require('postcss-cssnext');
 sorting = require('postcss-sorting');
 nested = require('postcss-nested');
@@ -296,11 +295,16 @@ gulp.task('css', function() {
 });
                                                                                                     </code></pre>
                                                 </section>
-                                                <section data-background="http://gph.is/13BssXa?tc=1">
-                                                    <h1>OJO CUIDAO!</h1>
-                                                    <h2>El orden de los plugins IMPORTA</h2>
+                                                <section  class="present">
+                                                    <section data-background="images/order.gif">
+                                                    <h1 class="fragment">OJO CUIDAO!</h1>
 
-                                                    <a href="https://github.com/postcss/postcss/issues/296">ISSUE - Event based API</a>
+                                                    </section>
+                                                    <section class="future">
+                                                        <h2>El orden de los plugins IMPORTA</h2>
+
+                                                        <a href="https://github.com/postcss/postcss/issues/296">ISSUE - Event based API</a>
+                                                    </section>
                                                 </section>
         </div>
     </div>
