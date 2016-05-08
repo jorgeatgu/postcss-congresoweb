@@ -21,7 +21,7 @@ gulp.task('css', function() {
     return gulp.src('./src/css/styles.css')
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
-        .pipe(sourcemaps.write('./css'))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css'));
 });
 
