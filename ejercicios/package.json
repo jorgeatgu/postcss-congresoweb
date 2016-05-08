@@ -16,7 +16,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.2",
-    "postcss-inline-comment": "^2.1.0",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.3.1"
   }
