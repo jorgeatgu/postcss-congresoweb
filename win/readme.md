@@ -20,4 +20,9 @@ Una vez ubicados en la ruta vamos a escribir en la consola ```npm install```
 
 Ahora vamos a escribir en la consola ```gulp```
 
-Y si todo ha salido bien la consola debería de devolvernos un mensaje
+Y si todo ha salido bien la consola debería de devolvernos un mensaje:
+
+```
+Starting 'default'...
+Finished 'default' after 11 ms
+```
