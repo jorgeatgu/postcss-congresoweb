@@ -1,0 +1,12 @@
+{
+  "name": "ejercicios-congreso-web",
+  "version": "1.0.0",
+  "description": "Parte práctica para el taller de postCSS en el Congreso Web 2016 en Zaragoza",
+  "main": "index.js",
+  "keywords": [
+    "postcss",
+    "css"
+  ],
+  "author": "Jorge Aznar",
+  "license": "MIT"
+}
