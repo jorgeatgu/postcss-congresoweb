@@ -4,7 +4,7 @@ El primer paso es instalar node.js, vamos a su web https://nodejs.org/ y descarg
 
 Una vez descargado vamos a instalarlo.
 
-Vamos a inicio, todos los programas, nodejs y abrimos la consola de nodejs
+Una vez instalado vamos a inicio, todos los programas, nodejs y abrimos la consola de nodejs
 
 Ahora vamos a actualizar npm. Escribimos en la consola ```npm install npm -g```
 
