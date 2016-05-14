@@ -264,7 +264,7 @@ color: var(--colorico);
                             <img style="border: 0; background: transparent; box-shadow: none; width: 505px; margin-right: 10px;" src="../images/postcss-parts.png" alt="" class="image-inline">
                         </section>
                         <section style="position: relative" data-background="../images/a-picar.gif">
-                            <H3>¡A PRACTICAR!</H3>
+                            <H1>¡A PRACTICAR!</H1>
                         </section>
                         <section>
                             Vamos a la siguiente URL:<a style="display: block;" href="https://github.com/jorgeatgu/postcss-congresoweb/">https://github.com/jorgeatgu/postcss-congresoweb/</a>
@@ -329,6 +329,33 @@ gulp.task('css', function() {
 
                                                                                                         <a href="https://github.com/postcss/postcss/issues/296">ISSUE - Event based API</a>
                                                                                                     </section>
+                                                </section>
+                                                                                                    <section>
+                                                                                                        <h2>Configurando Gulp</h2>
+                                                                                                                                    <pre><code data-trim data-noescape>
+gulp.task('css', function() {
+    var processors = [
+        atImport,
+        cssnext,
+        autoprefixer
+    ];
+    return gulp.src('./src/css/styles.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./css'));
+});
+                                                                                                                                                        </code></pre>
+                                                                                                    </section>
+                                                <section>
+                                                    <h1>EJERCICIO 1</h1>
+                                                    <p>Custom properties y custom selector</p>
+                                                </section>
+                                                <section>
+                                                    <h1>EJERCICIO 2</h1>
+                                                </section>
+                                                <section>
+                                                    <h1>EJERCICIO 3</h1>
                                                 </section>
                                                 <section data-background="images/questions.gif">
                                                     <h1>¿PREGUNTAS?</h1>
