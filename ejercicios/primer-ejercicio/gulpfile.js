@@ -14,7 +14,8 @@ gulp.task('css', function() {
 		autoprefixer
 	];
 	return gulp.src('./src/css/styles.css')
-		.pipe(sourcemaps.init())
+
+	.pipe(sourcemaps.init())
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./css'));
