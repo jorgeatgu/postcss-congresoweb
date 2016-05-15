@@ -1,0 +1,14 @@
+{
+  "name": "primer-ejercicio-taller-postcss-cweb",
+  "version": "1.0.0",
+  "description": "Primer ejercicio del taller de postCSS en el Congreso Web 2016 - Zaragoza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postcss"
+  ],
+  "author": "Jorge Aznar Tobajas",
+  "license": "MIT"
+}
