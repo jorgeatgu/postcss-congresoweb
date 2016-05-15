@@ -1,0 +1,54 @@
+/* Custom properties */
+:root {
+	/* Colores */
+	--navajo: navajowhite;
+	--alice: aliceblue;
+	--burly: burlywood;
+	--fire: firebrick;
+	/* Font-size */
+	--fontSize1: 46px;
+	--fontSize2: 34px;
+	--fontSize3: 26px;
+	--fontSize4: 20px;
+	/* Paddings & Margins */
+	--p20: 20px;
+	--m5: 5px;
+	--m10: 10px;
+	--m20: 20px;
+}
+
+/* Custom selectors */
+@custom-selector :--encabezados h1, h3, h4;
+
+:--encabezados {
+	margin: var(--m5);
+	color: var(--navajo);
+}
+
+h1 {
+	font-size: var(--fontSize1);
+}
+
+h2 {
+	font-size: var(--fontSize2);
+}
+
+p {
+	font-size: var(--fontSize4);
+	color: var(--alice);
+	font-weight: bold;
+}
+
+section {
+	background-color: var(--burly);
+	padding: var(--p20);
+	box-sizing: border-box;
+	margin: var(--m10);
+}
+
+article {
+	background-color: var(--fire);
+	margin: var(--m20);
+	padding: var(--p20);
+}
+

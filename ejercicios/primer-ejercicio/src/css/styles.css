@@ -1,49 +1,40 @@
-:root {
-	--navajo: navajowhite;
-	--alice: aliceblue;
-	--burly: burlywood;
-	--fire: firebrick;
-	--fontSize1: 46px;
-	--fontSize2: 34px;
-	--fontSize3: 26px;
-	--fontSize4: 20px;
-	--p20: 20px;
-	--m5: 5px;
-	--m10: 10px;
-	--m20: 20px;
-}
-
-@custom-selector :--encabezados h1, h3, h4;
-
-:--encabezados {
-	margin: var(--m5);
-	color: var(--navajo);
-}
-
+/* Utiliza custom properties y custom selectors */
 h1 {
-	font-size: var(--fontSize1);
+	font-size: 46px;
+	color: navajowhite;
+	margin: 5px;
 }
 
-h2 {
-	font-size: var(--fontSize2);
+h3 {
+	font-size: 34px;
+	color: navajowhite;
+	margin: 5px;
 }
+
+h4 {
+	font-size: 26px;
+	color: navajowhite;
+	font-weight: bold;
+	margin: 5px;
+}
+
 
 p {
-	font-size: var(--fontSize4);
-	color: var(--alice);
+	font-size: 20px;
+	color: aliceblue;
 	font-weight: bold;
 }
 
 section {
-	background-color: var(--burly);
-	padding: var(--p20);
+	background-color: burlywood;
+	padding: 20px;
 	box-sizing: border-box;
-	margin: var(--m10);
+	margin: 10px;
 }
+
 
 article {
-	background-color: var(--fire);
-	margin: var(--m20);
-	padding: var(--p20);
+	background-color: firebrick;
+	margin: 20px;
+	padding: 20px;
 }
-
