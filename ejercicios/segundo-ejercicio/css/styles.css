@@ -471,7 +471,7 @@ p {
 .cc-background,
 .cc-foreground {
 	border: 1px solid #111;
-	padding: 20px 40px;
+	padding: 20px;
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
@@ -496,7 +496,10 @@ p {
 
 	.cc-clasificacion,
 	.cc-puntuacion {
-		width: 50%;
+		--widthCP: 50%;
+		--paddingBF: 40px;
+		width: 100%;
+		padding: 20px;
 	}
 
 	.cc-background {
@@ -506,36 +509,45 @@ p {
 	.cc-background,
 	.cc-foreground {
 		width: 49%;
+		--fontBF: 24px;
 	}
 
 	.cc-texto {
-		font-size: 28px;
-		line-height: 34px;
+		--fontT: 28px;
+		--lineHT: 34px;
+		font-size: 20px;
+		line-height: 26px;
 	}
 
 	.cc-puntuacion {
 		text-align: right;
-		font-size: 60px;
+		--fontSP: 60px;
+		font-size: 30px;
 	}
 
 	.cc-clasificacion {
-		font-size: 90px;
+		--fontSC: 90px;
+		font-size: 50px;
 	}
 
 	.cc {
-		padding: 60px;
+		--paddingCC: 60px;
+		padding: 20px;
 	}
 
 	.cc1-bg {
+		--colorPrimary: #FEC845;
 		background-color: #65065A;
 	}
 
 	.cc1-bg .cc-background,
 		.cc1-bg .cc-foreground {
+    --colorSecondary: #65065A;
     border: 1px solid #FEC845;
   }
 
 	.cc1-fg {
+		--colorSecondary: #65065A;
 		color: #FEC845;
 	}
 

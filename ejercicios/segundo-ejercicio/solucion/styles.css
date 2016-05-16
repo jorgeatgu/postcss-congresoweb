@@ -84,10 +84,21 @@ p {
 
 @media only screen and (min-width: 48em) {
 
-	.cc-clasificacion,
-	.cc-puntuacion {
+	:root {
+		--paddingCC: 60px;
+		--fontSC: 90px;
+		--fontSP: 60px;
+		--fontT: 28px;
+		--lineHT: 34px;
+		--fontBF: 24px;
 		--widthCP: 50%;
 		--paddingBF: 40px;
+		--colorPrimary: #FEC845;
+		--colorSecondary: #65065A;
+	}
+
+	.cc-clasificacion,
+	.cc-puntuacion {
 		width: var(--widthCP);
 		padding: var(--paddingBF);
 	}
@@ -99,44 +110,35 @@ p {
 	.cc-background,
 	.cc-foreground {
 		width: 49%;
-		--fontBF: 24px;
 	}
 
 	.cc-texto {
-		--fontT: 28px;
-		--lineHT: 34px;
 		font-size: var(--fontT);
 		line-height: var(--lineHT);
 	}
 
 	.cc-puntuacion {
 		text-align: right;
-		--fontSP: 60px;
 		font-size: var(--fontSP);
 	}
 
 	.cc-clasificacion {
-		--fontSC: 90px;
 		font-size: var(--fontSC);
 	}
 
 	.cc {
-		--paddingCC: 60px;
 		padding: var(--paddingCC);
 	}
 
 	.cc1-bg {
-		--colorPrimary: #FEC845;
 		background-color: var(--colorPrimary);
 		.cc-background,
 		.cc-foreground {
-			--colorSecondary: #65065A;
 			border: 1px solid var(--colorSecondary);
 		}
 	}
 
 	.cc1-fg {
-		--colorSecondary: #65065A;
 		color: var(--colorSecondary);
 	}
 
