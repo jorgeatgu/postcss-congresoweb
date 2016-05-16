@@ -492,14 +492,6 @@ p {
 	color: #65065A;
 }
 
-.cc2-bg {
-	background-color: #E1DCE3;
-}
-
-.cc2-fg {
-	color: #271764;
-}
-
 @media only screen and (min-width: 48em) {
 
 	.cc-clasificacion,
@@ -516,6 +508,11 @@ p {
 		width: 49%;
 	}
 
+	.cc-texto {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
 	.cc-puntuacion {
 		text-align: right;
 		font-size: 60px;
@@ -523,6 +520,23 @@ p {
 
 	.cc-clasificacion {
 		font-size: 90px;
+	}
+
+	.cc {
+		padding: 60px;
+	}
+
+	.cc1-bg {
+		background-color: #65065A;
+	}
+
+	.cc1-bg .cc-background,
+		.cc1-bg .cc-foreground {
+    border: 1px solid #FEC845;
+  }
+
+	.cc1-fg {
+		color: #FEC845;
 	}
 
 }
