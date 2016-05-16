@@ -460,6 +460,10 @@ p {
 	font-size: 30px;
 }
 
+.cc-colors {
+	font-size: 0;
+}
+
 .cc-colors span {
   font-weight: bold;
 }
@@ -471,6 +475,8 @@ p {
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
+	margin: 10px 0;
+	font-size: 16px;
 }
 
 .cc-texto {
@@ -493,4 +499,32 @@ p {
 .cc2-fg {
 	color: #271764;
 }
+
+@media only screen and (min-width: 48em) {
+
+	.cc-clasificacion,
+	.cc-puntuacion {
+		width: 50%;
+	}
+
+	.cc-background {
+		margin-right: 2%;
+	}
+
+	.cc-background,
+	.cc-foreground {
+		width: 49%;
+	}
+
+	.cc-puntuacion {
+		text-align: right;
+		font-size: 60px;
+	}
+
+	.cc-clasificacion {
+		font-size: 90px;
+	}
+
+}
+
 /*# sourceMappingURL=styles.css.map */
