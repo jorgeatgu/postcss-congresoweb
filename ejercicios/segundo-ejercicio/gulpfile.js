@@ -3,14 +3,14 @@ postcss = require('gulp-postcss');
 autoprefixer = require('gulp-autoprefixer');
 sourcemaps = require('gulp-sourcemaps');
 atImport = require('postcss-import');
-cssnext = require('postcss-cssnext');
 nested = require('postcss-nested');
+cssvariables = require('postcss-css-variables');
 
 gulp.task('css', function() {
 	var processors = [
-		nested,
 		atImport,
-		cssnext,
+		nested,
+		cssvariables,
 		autoprefixer
 	];
 	return gulp.src('./src/css/styles.css')
