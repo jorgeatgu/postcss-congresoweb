@@ -1,15 +1,29 @@
 @import '_reset';
 
+:root {
+	--fontSystem: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+	--widthCP: 100%;
+	--fontSC: 50px;
+	--fontSP: 30px;
+	--fontT: 20px;
+	--lineHT: 26px;
+	--fontBF: 16px;
+	--paddingCC: 20px;
+	--paddingBF: 20px;
+	--colorPrimary: #65065A;
+	--colorSecondary: #FEC845;
+}
+
 .cc {
 	width: 100%;
-	padding: 20px;
+	padding: var(--paddingCC);
 	box-sizing: border-box;
 }
 
 h2,
 h3,
 p {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: var(--fontSystem);
 }
 
 .vm {
@@ -25,16 +39,16 @@ p {
 .cc-clasificacion,
 .cc-puntuacion {
 	display: inline-block;
-	width: 100%;
+	width: var(--widthCP);
 	margin: 5px 0;
 }
 
 .cc-clasificacion {
-	font-size: 50px;
+	font-size: var(--fontSC);
 }
 
 .cc-puntuacion {
-	font-size: 30px;
+	font-size: var(--fontSP);
 }
 
 .cc-colors {
@@ -47,33 +61,43 @@ p {
 .cc-background,
 .cc-foreground {
 	border: 1px solid #111;
-	padding: 20px 40px;
+	padding: var(--paddingBF);
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
 	margin: 10px 0;
-	font-size: 16px;
+	font-size: var(--fontBF);
 }
 
 .cc-texto {
-	font-size: 20px;
-	line-height: 26px;
+	font-size: var(--fontT);
+	line-height: var(--lineHT);
 }
 
 .cc1-bg {
-	background-color: #FEC845;
+	background-color: var(--colorSecondary);
 }
 
 .cc1-fg {
-	color: #65065A;
+	color: var(--colorPrimary);
 }
 
 @media only screen and (min-width: 48em) {
 
-	.cc-clasificacion,
-	.cc-puntuacion {
-		width: 50%;
+	:root {
+		--paddingCC: 60px;
+		--fontSC: 90px;
+		--fontSP: 60px;
+		--fontT: 28px;
+		--lineHT: 34px;
+		--fontBF: 24px;
+		--widthCP: 50%;
+		--paddingBF: 40px;
+		--colorPrimary: #FEC845;
+		--colorSecondary: #65065A;
 	}
+
+
 
 	.cc-background {
 		margin-right: 2%;
@@ -82,38 +106,11 @@ p {
 	.cc-background,
 	.cc-foreground {
 		width: 49%;
-		padding: 40px;
-		font-size: 24px;
 	}
 
-	.cc-texto {
-		font-size: 28px;
-		line-height: 34px;
-	}
 
 	.cc-puntuacion {
 		text-align: right;
-		font-size: 60px;
-	}
-
-	.cc-clasificacion {
-		font-size: 90px;
-	}
-
-	.cc {
-		padding: 60px;
-	}
-
-	.cc1-bg {
-		background-color: #65065A;
-		.cc-background,
-		.cc-foreground {
-			border: 1px solid #FEC845;
-		}
-	}
-
-	.cc1-fg {
-		color: #FEC845;
 	}
 
 }
