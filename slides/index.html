@@ -172,19 +172,45 @@ He answered becouse I pull request to compass CSS and they didn't ansewred me.&r
                 <h3 class="fragment">Use tomorrow’s CSS syntax,</h3>
                 <h1 class="fragment" style="display: inline-block;">TODAY.</h1>
             </section>
-            <section style="text-align: left;">
-                <h2>CSSNEXT</h2>
-                <h6>custom properties</h6>
-                <pre><code data-trim data-noescape>
+            <section>
+                <section class="present" style="text-align: left;">
+                    <h1>CSSNEXT</h1>
+                    <h3>custom properties</h3>
+                </section>
+                                        <section class="future">
+                                            <h2>¿Que son las custom-properties?</h2>
+                                            <h5>También mal llamadas CSS variables</h5>
+                                                <pre><code data-trim data-noescape>
 
-				:root {
---colorico: navajowhite;
+                :root {
+    --colorico: navajowhite;
 }
 
 h2 {
-color: var(--colorico);
+    color: var(--colorico);
 }
-                                    </code></pre>
+                                                                    </code></pre>
+                                        </section>
+                                        <section class="future">
+                                            <h3>Las custom properties pueden ser globales o 'locales'</h3>
+                                                <pre><code data-trim data-noescape>
+//Globales
+:root,
+html,
+body {
+    --colorico: navajowhite;
+}
+
+//Locales
+
+.foo {
+    --pd: 20px;
+
+}
+
+
+                                                                    </code></pre>
+                                        </section>
             </section>
                         <section style="text-align: left;">
                             <h2>CSSNEXT</h2>
