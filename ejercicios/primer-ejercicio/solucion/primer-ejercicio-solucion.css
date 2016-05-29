@@ -18,9 +18,9 @@
 }
 
 /* Custom selectors */
-@custom-selector :--encabezados h1, h3, h4;
+@custom-selector --encabezados h1, h3, h4;
 
-:--encabezados {
+--encabezados {
 	margin: var(--m5);
 	color: var(--navajo);
 }
