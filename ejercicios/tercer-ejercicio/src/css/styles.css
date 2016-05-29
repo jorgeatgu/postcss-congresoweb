@@ -1,0 +1,116 @@
+@import '_reset';
+
+:root {
+	--fontSystem: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+	--widthCP: 100%;
+	--fontSC: 50px;
+	--fontSP: 30px;
+	--fontT: 20px;
+	--lineHT: 26px;
+	--fontBF: 16px;
+	--paddingCC: 20px;
+	--paddingBF: 20px;
+	--colorPrimary: #65065A;
+	--colorSecondary: #FEC845;
+}
+
+.cc {
+	width: 100%;
+	padding: var(--paddingCC);
+	box-sizing: border-box;
+}
+
+h2,
+h3,
+p {
+	font-family: var(--fontSystem);
+}
+
+.vm {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cc-header {
+	font-size: 0;
+	width: 100%;
+}
+
+.cc-clasificacion,
+.cc-puntuacion {
+	display: inline-block;
+	width: var(--widthCP);
+	margin: 5px 0;
+}
+
+.cc-clasificacion {
+	font-size: var(--fontSC);
+}
+
+.cc-puntuacion {
+	font-size: var(--fontSP);
+}
+
+.cc-colors {
+	font-size: 0;
+	span {
+		font-weight: bold;
+	}
+}
+
+.cc-background,
+.cc-foreground {
+	border: 1px solid #111;
+	padding: var(--paddingBF);
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	font-size: var(--fontBF);
+}
+
+.cc-texto {
+	font-size: var(--fontT);
+	line-height: var(--lineHT);
+}
+
+.cc1-bg {
+	background-color: var(--colorSecondary);
+}
+
+.cc1-fg {
+	color: var(--colorPrimary);
+}
+
+@media only screen and (min-width: 48em) {
+
+	:root {
+		--paddingCC: 60px;
+		--fontSC: 90px;
+		--fontSP: 60px;
+		--fontT: 28px;
+		--lineHT: 34px;
+		--fontBF: 24px;
+		--widthCP: 50%;
+		--paddingBF: 40px;
+		--colorPrimary: #FEC845;
+		--colorSecondary: #65065A;
+	}
+
+
+
+	.cc-background {
+		margin-right: 2%;
+	}
+
+	.cc-background,
+	.cc-foreground {
+		width: 49%;
+	}
+
+
+	.cc-puntuacion {
+		text-align: right;
+	}
+
+}

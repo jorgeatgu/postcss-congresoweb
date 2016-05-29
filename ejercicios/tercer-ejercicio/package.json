@@ -1,7 +1,7 @@
 {
-  "name": "primer-ejercicio-taller-postcss-cweb",
+  "name": "segundo-ejercicio-taller-postcss-cweb",
   "version": "1.0.0",
-  "description": "Primer ejercicio del taller de postCSS en el Congreso Web 2016 - Zaragoza",
+  "description": "Segundo ejercicio del taller de postCSS en el Congreso Web 2016 - Zaragoza",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sourcemaps": "^1.6.0",
-    "postcss-cssnext": "^2.5.2",
+    "postcss-css-variables": "^0.5.1",
     "postcss-import": "^8.1.2",
     "postcss-nested": "^1.0.0"
   }
