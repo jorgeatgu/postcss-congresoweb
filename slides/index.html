@@ -412,17 +412,6 @@ cssnext = require('postcss-cssnext');
 sorting = require('postcss-sorting');
 nested = require('postcss-nested');
 
-gulp.task('css', function() {
-    var processors = [
-        atImport,
-        nested,
-        cssnext,
-        sorting({
-            "sort-order": "csscomb"
-        }),
-        autoprefixer
-    ];
-});
                                                                             </code></pre>
                         </section>
                                                 <section class="present">
@@ -467,17 +456,8 @@ gulp.task('css', function() {
                                                                                                     <section>
                                                                                                         <h2>Configurando Gulp</h2>
                                                                                                                                     <pre><code data-trim data-noescape>
-gulp.task('css', function() {
-    var processors = [
-        atImport,
-        cssnext,
-        autoprefixer
-    ];
-    return gulp.src('./src/css/styles.css')
-    .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./css'));
+gulp.task('default', function() {
+    gulp.watch('./src/css/*.css', ['css']);
 });
                                                                                                                                                         </code></pre>
                                                                                                     </section>
@@ -489,11 +469,8 @@ gulp.task('css', function() {
                                                     <h1>EJERCICIO 2</h1>
                                                     <p>Modificando las custom properties en los Media-Queries</p>
                                                 </section>
-                                                <section>
-                                                    <h1>EJERCICIO 3</h1>
-                                                </section>
                                                 <section data-background="images/questions.gif">
-                                                    <h1>¿PREGUNTAS?</h1>
+                                                    <h1 style="color: #000;">¿PREGUNTAS?</h1>
                                                 </section>
                                                 <section data-background="images/the_end.gif">
                                                     <h1>¡GRACIAS!</h1>
