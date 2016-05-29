@@ -59,6 +59,9 @@
             </section>
             <section>
                 <h1>postCSS vs SASS</h1>
+                <aside class="notes">
+                    Me imagino que como la amplia mayoría de la gente al escuchar postCSS creeis que es una nuevo preprocesador que va a sustituir a SASS.
+                </aside>
             </section>
             <section data-background="http://i.giphy.com/OpvoAdhfHlVde.gif">
                 <h1 class="fragment">NOOOOOOO!!!</h1>
@@ -68,6 +71,24 @@
                 <h1 style="color: #000 !important;" class="fragment">love</h1>
                 <h1 style="color: #000 !important;" class="fragment">SASS - LESS - STYLUS</h1>
             </section>
+                                    <section style="text-align: left;">
+                                        <h2><a href="https://github.com/jonathantneal/precss">preCSS</a></h2>
+                                        <h6 class="fragment">Utilizando SASS con postCSS</h6>
+                                        <ul class="fragment">
+                                            <li>postcss-mixins</li>
+                                            <li>postcss-advanced-variables</li>
+                                            <li>postcss-partial-import</li>
+                                            <li>postcss-color-function</li>
+                                            <li>postcss-nesting</li>
+                                            <li>postcss-nested</li>
+                                            <li>postcss-atroot</li>
+                                            <li>postcss-custom-selectors</li>
+                                            <li>postcss-custom-media</li>
+                                            <li>postcss-custom-properties</li>
+                                            <li>postcss-extend</li>
+                                            <li>postcss-selector-not</li>
+                                        </ul>
+                                    </section>
             <section>
                 <h3>postCSS NO es un preprocesador </h3>
                 <h3>puede convivir con tu preprocesador favorito como SASS & LESS</h3>
@@ -103,6 +124,10 @@
 He answered becouse I pull request to compass CSS and they didn't ansewred me.&rdquo;</q>
                     <q class="fragment" cite="https://twitter.com/awat_17/status/726732972234252288">
                                             &ldquo;@andreysitnik @PostCSS so I decided to destroy them.&rdquo;</q>
+                                            <aside class="notes">
+                                                Proyecto con SASS heredado
+                                                Proyecto con soporte para IE8
+                                            </aside>
                 </section>
                 <section class="future">
                     <h2>Rápidez</h2>
@@ -217,9 +242,46 @@ body {
                                         </section>
 
                                         <section class="future">
-                                            <h2>Puedes ser modificadas en los Media Queries</h2>
+                                            <h3>Puedes ser modificadas en los Media Queries</h3>
 
                                                 <a href="http://codepen.io/jorgeatgu/full/b702ed36443b3b06fc00c32dcad4c15e/">DEMO!</a>
+                                                                            <article class="fragment"><pre><code data-trim data-noescape>
+:root {
+  --size: 90%;
+  --fontSize: 20px;
+  --lineH: 26px;
+  --colorFT: #271764;
+  --colorBG: #E1DCE3;
+  --padding: 40px;
+  --margin: 50px;
+  --fontF: -apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+
+.foo {
+  display: block;
+  font-size: var(--fontSize);
+  font-family: var(--fontF);
+  line-height: var(--lineH);
+  margin: var(--margin) auto;
+  width: var(--size);
+  color: var(--colorFT);
+  background-color: var(--colorBG);
+  padding: var(--padding);
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 64em) {
+  .foo {
+    --size: 40%;
+  --fontSize: 30px;
+  --lineH: 36px;
+  --colorFT: #242424;
+  --colorBG: #E4A824;
+  }
+}
+                                                                                                    </code></pre></article>
+
                                         </section>
 
 
@@ -266,24 +328,6 @@ body {
                             <p style="margin: 10px 0">:matches pseudo-class</p>
                             <p style="margin: 10px 0">:not pseudo-class (to l.3)</p>
                             <p style="margin: 10px 0">::pseudo syntax (: fallback)</p>
-                        </section>
-                        <section style="text-align: left;">
-                            <h2>preCSS</h2>
-							<h6 class="fragment">Utilizando SASS con postCSS</h6>
-							<ul class="fragment">
-								<li>postcss-mixins</li>
-                                <li>postcss-advanced-variables</li>
-                                <li>postcss-partial-import</li>
-                                <li>postcss-color-function</li>
-                                <li>postcss-nesting</li>
-                                <li>postcss-nested</li>
-                                <li>postcss-atroot</li>
-                                <li>postcss-custom-selectors</li>
-                                <li>postcss-custom-media</li>
-                                <li>postcss-custom-properties</li>
-                                <li>postcss-extend</li>
-                                <li>postcss-selector-not</li>
-							</ul>
                         </section>
                         <section style="text-align: left;">
                             <h2>postCSS-sorting</h2>
