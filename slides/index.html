@@ -402,7 +402,7 @@ body {
                         <section>
                             <section class="present">
                                 <h1>EJERCICIO 1</h1>
-                                <p>NPM + postCSS + Gulp</p>
+                                <h3>NPM + postCSS + Gulp</h3>
                             </section>
                             <section class="future">
 <h2>Creando el package.json</h2>
@@ -480,7 +480,17 @@ gulp.task('default', function() {
 });
                                                                                                                                                         </code></pre>
                                                                                                     </section>
+                                                <section>
+                                                    <h2>Configurando Gulp</h2>
+                                                    <pre><code>
+return gulp.src('./src/css/styles.css')
+.pipe(sourcemaps.init())
+.pipe(postcss(processors))
+.pipe(sourcemaps.write('.'))
+.pipe(gulp.dest('./css'));
+                                                    </code></pre>
 
+                                                </section>
                                                 <section>
                                                     <h1>EJERCICIO 2</h1>
                                                     <p>Custom properties y custom selector</p>
