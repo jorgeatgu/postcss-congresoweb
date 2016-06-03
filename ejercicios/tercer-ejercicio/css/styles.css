@@ -429,23 +429,10 @@ th {
 	box-sizing: border-box;
 }
 
-@media only screen and (min-width: 48em) {
-
-  .cc {
-    padding: 60px;
-  }
-}
-
-h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-h3 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
+h2,
+h3,
 p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .vm {
@@ -458,52 +445,19 @@ p {
 	width: 100%;
 }
 
-.cc-clasificacion {
-  display: inline-block;
-  width: 100%;
-  margin: 5px 0;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-clasificacion {
-    width: 50%;
-  }
-}
-
+.cc-clasificacion,
 .cc-puntuacion {
-  display: inline-block;
-  width: 100%;
-  margin: 5px 0;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-puntuacion {
-    width: 50%;
-  }
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0;
 }
 
 .cc-clasificacion {
 	font-size: 50px;
 }
 
-@media only screen and (min-width: 48em) {
-
-  .cc-clasificacion {
-    font-size: 90px;
-  }
-}
-
 .cc-puntuacion {
 	font-size: 30px;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-puntuacion {
-    font-size: 60px;
-  }
 }
 
 .cc-colors {
@@ -514,52 +468,15 @@ p {
   font-weight: bold;
 }
 
-.cc-background {
-  border: 1px solid #111;
-  padding: 20px;
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-background {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-background {
-    padding: 40px;
-  }
-}
-
+.cc-background,
 .cc-foreground {
-  border: 1px solid #111;
-  padding: 20px;
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-foreground {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-foreground {
-    padding: 40px;
-  }
+	border: 1px solid #111;
+	padding: 20px 40px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	font-size: 16px;
 }
 
 .cc-texto {
@@ -567,29 +484,8 @@ p {
 	line-height: 26px;
 }
 
-@media only screen and (min-width: 48em) {
-
-  .cc-texto {
-    line-height: 34px;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc-texto {
-    font-size: 28px;
-  }
-}
-
 .cc1-bg {
 	background-color: #FEC845;
-}
-
-@media only screen and (min-width: 48em) {
-
-  .cc1-bg {
-    background-color: #65065A;
-  }
 }
 
 .cc1-fg {
@@ -598,14 +494,10 @@ p {
 
 @media only screen and (min-width: 48em) {
 
-  .cc1-fg {
-    color: #FEC845;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-
-
+	.cc-clasificacion,
+	.cc-puntuacion {
+		width: 50%;
+	}
 
 	.cc-background {
 		margin-right: 2%;
@@ -614,11 +506,39 @@ p {
 	.cc-background,
 	.cc-foreground {
 		width: 49%;
+		padding: 40px;
+		font-size: 24px;
 	}
 
+	.cc-texto {
+		font-size: 28px;
+		line-height: 34px;
+	}
 
 	.cc-puntuacion {
 		text-align: right;
+		font-size: 60px;
+	}
+
+	.cc-clasificacion {
+		font-size: 90px;
+	}
+
+	.cc {
+		padding: 60px;
+	}
+
+	.cc1-bg {
+		background-color: #65065A;
+	}
+
+	.cc1-bg .cc-background,
+		.cc1-bg .cc-foreground {
+    border: 1px solid #FEC845;
+  }
+
+	.cc1-fg {
+		color: #FEC845;
 	}
 
 }
