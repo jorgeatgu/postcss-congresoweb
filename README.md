@@ -1,5 +1,8 @@
 # postcss-congresoweb
+
 Repositorio con todos los ejemplos para el taller de postCSS del Congreso Web
+
+[Las slides online](http://jorgeatgu.github.io/slides/#/)
 
 
 Si eres usuario de **Windows** haz click [aqui](https://github.com/jorgeatgu/postcss-congresoweb/tree/master/win)

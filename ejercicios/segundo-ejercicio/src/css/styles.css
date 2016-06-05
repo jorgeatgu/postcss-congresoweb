@@ -1,9 +1,19 @@
 /* Utiliza custom properties y custom selectors */
+:root {
+	--fontSG: 46px;
+}
+
+
 h1 {
-	font-size: 46px;
+	font-size: var(--fontSG);
 	color: navajowhite;
 	margin: 5px;
+	&.foo {
+
+	}
 }
+
+
 
 h3 {
 	font-size: 34px;

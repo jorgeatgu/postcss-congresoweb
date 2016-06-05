@@ -22,7 +22,7 @@ gulp.task('css', function() {
 	.pipe(sourcemaps.init())
 	.pipe(postcss(processors))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./css'));
+	.pipe(gulp.dest('./css'));
 });
 
 gulp.task('default', function() {

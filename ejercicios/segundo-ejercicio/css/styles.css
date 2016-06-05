@@ -4,6 +4,7 @@ h1 {
 	color: navajowhite;
 	margin: 5px;
 }
+h1.foo {}
 h3 {
 	font-size: 34px;
 	color: navajowhite;
